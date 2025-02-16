@@ -1,0 +1,97 @@
+/* General Styles */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar Styling */
+.custom-navbar {
+    background-color: #333; /* Light Pink */
+    padding: 15px 0;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f5b5c3; /* Soft pink color */
+    text-transform: uppercase;
+}
+
+
+/* Centered Navigation */
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-nav .nav-link {
+    color: #f5b5c3; /* Soft pink */
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffccd5; /* Lighter pink on hover */
+}
+
+/* Navbar Icons (Aligned Right) */
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-icons a {
+    color: #f5b5c3;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar-icons a:hover {
+    color: #ffccd5;
+}
+
+.navbar-icons a:hover i {
+    color: #ff6b81; /* Roz intens */
+}
+
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.must-haves {
+    padding: 50px 20px; /* Spațiere în jurul textului */
+    background-color: #333; /* Fundal deschis pentru contrast */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.must-haves h2 {
+    font-size: 2rem; /* Dimensiune mai mare a textului */
+    font-weight: 700; /* Font bold */
+    text-transform: uppercase; /* Transformă textul în litere mari */
+    letter-spacing: 2px;
+}
+.must-haves h2 {
+    color: #ffccd5; /* Roz */
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-item {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.image-item img {
+    width: 100%; /* Imaginea să ocupe întreaga lățime a containerului */
+    max-width: 100%; /* Fără limitare */
+    height: auto;
+}
