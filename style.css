@@ -1,21 +1,103 @@
 /* General Styles */
 * {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+.logo {
+    height: 500px;
+    width: auto;
+    max-height: none;
+}
+
+/* Image Slider Styles */
+/* Image Slider Styles */
+.image-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center; /* Center the images */
+}
+
+.image-slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding: 0 60px; /* Add space on the left and right of the entire slider */
+}
+
+.image-item {
+    width: 25%; /* Four images per row */
+    margin-right: 30px; /* Small space between images */
+
+    height: 300; /* Allow images to maintain their original aspect ratio */
+    display: flex;
+    justify-content: center; /* Centers image horizontally */
+    align-items: center; /* Centers image vertically */
+
+}
+
+.image-item:last-child {
+    margin-right: 0; /* No margin on the last image */
+}
+
+.image-item img {
+    width: 100%; /* Make image width 100% of its container */
+    height: 100%; /* Maintain original aspect ratio */
+    object-fit: cover; /* Prevent distortion */
+}
+
+/* Controls for image slider */
+.slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
 
 /* Navbar Styling */
 .custom-navbar {
-    background-color: #333; /* Light Pink */
-    padding: 15px 0;
+    background-color: #ffffff;
+    padding: 45px 0;
 }
 
 .logo-text {
     font-size: 24px;
     font-weight: bold;
-    color: #f5b5c3; /* Soft pink color */
+    color: #000;
     text-transform: uppercase;
 }
 
+/* Main Image Section */
+.main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide any overflow of the image */
+}
+
+.main-image img {
+    width: 100%; /* Ensures image width fills the container */
+    height: 100%; /* Ensures image height fills the container */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block;
+}
 
 /* Centered Navigation */
 .navbar-nav {
@@ -23,17 +105,17 @@
 }
 
 .navbar-nav .nav-link {
-    color: #f5b5c3; /* Soft pink */
+    color: #000;
     font-size: 16px;
     font-weight: 500;
     margin: 0 10px;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ffccd5; /* Lighter pink on hover */
+    color: #333;
 }
 
-/* Navbar Icons (Aligned Right) */
+/* Navbar Icons */
 .navbar-icons {
     display: flex;
     align-items: center;
@@ -41,7 +123,7 @@
 }
 
 .navbar-icons a {
-    color: #f5b5c3;
+    color: #000;
     font-size: 20px;
     text-decoration: none;
 }
@@ -50,48 +132,200 @@
     color: #ffccd5;
 }
 
-.navbar-icons a:hover i {
-    color: #ff6b81; /* Roz intens */
+/* About Us Section (Centered) */
+.must-haves, .new-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 60px 30px;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 10px;
 }
 
+.must-haves h2, .new-in h3 {
+    font-size: 1.8rem;
+    font-weight: ;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #000;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;  /* Add a black line under the text */
+    padding-bottom: 10px;  /* Add some space between the text and the line */
+}
 
-.main-image img {
+.must-haves h1 {
+    font-size: 1.3rem;  /* Font size for MAISON */
+    font-weight:lighter;
+    text-transform: uppercase;
+    letter-spacing: 5px;  /* Add spacing between letters */
+    margin-bottom: 10px;  /* Space below the heading */
+}
+/* Content Styling */
+.must-haves ul, .new-in ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.must-haves li, .new-in li {
+    margin-bottom: 36px;
+    font-size: 1.9rem;
+}
+
+/* Container for text sections */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.content-wrapper div {
+    max-width: 800px;
     width: 100%;
-    height: auto;
+}
+
+/* Target the <p> element containing "About" */
+p {
+    font-size: 1.3rem;
+    font-weight: 150;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        font-size: 14px;
+    }
+
+    .must-haves h2, .new-in h3 {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    /* Stack images vertically on smaller screens */
+    .image-item {
+        width: 100%; /* Full width for images on small screens */
+        margin-right: 0; /* Remove right margin */
+    }
+}
+
+/* Login Container */
+.login-container {
+    
+
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Form Styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Styling */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
     display: block;
 }
 
-.must-haves {
-    padding: 50px 20px; /* Spațiere în jurul textului */
-    background-color: #333; /* Fundal deschis pentru contrast */
-    font-family: 'Montserrat', sans-serif;
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
 }
 
-.must-haves h2 {
-    font-size: 2rem; /* Dimensiune mai mare a textului */
-    font-weight: 700; /* Font bold */
-    text-transform: uppercase; /* Transformă textul în litere mari */
-    letter-spacing: 2px;
-}
-.must-haves h2 {
-    color: #ffccd5; /* Roz */
+.input-group input:focus {
+    outline: none;
+    border-color: #3b8ee6;
 }
 
-.image-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
+/* Button Styling */
+.login-btn {
+    background-color: #000; /* Black background */
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
-.image-item {
-    flex: 1;
-    min-width: 200px;
-    text-align: center;
+.login-btn:hover {
+    background-color: #444; /* Darker shade of black on hover */
 }
 
-.image-item img {
-    width: 100%; /* Imaginea să ocupe întreaga lățime a containerului */
-    max-width: 100%; /* Fără limitare */
-    height: auto;
+/* Responsive Design */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 40px;
+        width: 90%;
+        height: auto; /* Allow height to auto adjust for smaller screens */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    /* Adjust image items to 2 per row */
+    .image-item {
+        width: 50%; /* Two images per row */
+        height: 250px; /* Adjust height for smaller screens */
+    }
+
+    .slider-control {
+        font-size: 1.5rem; /* Adjust slider controls for mobile */
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    /* Adjust image items to 1 per row */
+    .image-item {
+        width: 100%; /* One image per row */
+        height: 200px; /* Adjust height for small screens */
+    }
+
+    .slider-control {
+        font-size: 1.2rem; /* Adjust slider controls for smaller screens */
+    }
 }
