@@ -88,8 +88,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Hide any overflow of the image */
+    height: 100vh; 
+    overflow: hidden; 
 }
 
 .main-image img {
@@ -328,4 +328,87 @@ h2 {
     .slider-control {
         font-size: 1.2rem; /* Adjust slider controls for smaller screens */
     }
+}
+
+
+
+.our-services {
+    background-color: #f8f9fa; /* Gri deschis */
+    padding: 50px 0;
+}
+
+.service-option {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-option:hover {
+    transform: scale(1.05); /* Mărește ușor pe hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adaugă umbră */
+}
+
+
+.custom-footer {
+    background-color: #b30000; /* Roșu */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffcccc; /* Roșu mai deschis */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffcccc;
+}
+
+.footer-newsletter input {
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+}
+
+.powered {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
 }
