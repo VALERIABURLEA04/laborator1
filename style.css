@@ -11,40 +11,40 @@
     max-height: none;
 }
 
-/* Image Slider Styles */
+
 /* Image Slider Styles */
 .image-slider {
     position: relative;
     width: 100%;
     overflow: hidden;
-    justify-content: center; /* Center the images */
+    justify-content: center; 
 }
 
 .image-slider-wrapper {
     display: flex;
     transition: transform 0.5s ease;
-    padding: 0 60px; /* Add space on the left and right of the entire slider */
+    padding: 0 60px; 
 }
 
 .image-item {
-    width: 25%; /* Four images per row */
-    margin-right: 30px; /* Small space between images */
+    width: 25%; 
+    margin-right: 30px; 
 
-    height: 300; /* Allow images to maintain their original aspect ratio */
+    height: 300; 
     display: flex;
-    justify-content: center; /* Centers image horizontally */
-    align-items: center; /* Centers image vertically */
+    justify-content: center; 
+    align-items: center; 
 
 }
 
 .image-item:last-child {
-    margin-right: 0; /* No margin on the last image */
+    margin-right: 0; 
 }
 
 .image-item img {
-    width: 100%; /* Make image width 100% of its container */
-    height: 100%; /* Maintain original aspect ratio */
-    object-fit: cover; /* Prevent distortion */
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
 }
 
 /* Controls for image slider */
@@ -93,9 +93,9 @@
 }
 
 .main-image img {
-    width: 100%; /* Ensures image width fills the container */
-    height: 100%; /* Ensures image height fills the container */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
     display: block;
 }
 
@@ -152,16 +152,16 @@
     letter-spacing: 3px;
     color: #000;
     margin-bottom: 20px;
-    border-bottom: 2px solid #000;  /* Add a black line under the text */
-    padding-bottom: 10px;  /* Add some space between the text and the line */
+    border-bottom: 2px solid #000; 
+    padding-bottom: 10px;  
 }
 
 .must-haves h1 {
-    font-size: 1.3rem;  /* Font size for MAISON */
+    font-size: 1.3rem;  
     font-weight:lighter;
     text-transform: uppercase;
-    letter-spacing: 5px;  /* Add spacing between letters */
-    margin-bottom: 10px;  /* Space below the heading */
+    letter-spacing: 5px; 
+    margin-bottom: 10px;
 }
 /* Content Styling */
 .must-haves ul, .new-in ul {
@@ -217,8 +217,8 @@ p {
 
     /* Stack images vertically on smaller screens */
     .image-item {
-        width: 100%; /* Full width for images on small screens */
-        margin-right: 0; /* Remove right margin */
+        width: 100%; 
+        margin-right: 0; 
     }
 }
 
@@ -230,8 +230,8 @@ p {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: center; 
+    align-items: center; 
 }
 
 /* Form Styling */
@@ -291,7 +291,7 @@ h2 {
 }
 
 .login-btn:hover {
-    background-color: #444; /* Darker shade of black on hover */
+    background-color: #444; 
 }
 
 /* Responsive Design */
@@ -299,7 +299,7 @@ h2 {
     .login-container {
         padding: 40px;
         width: 90%;
-        height: auto; /* Allow height to auto adjust for smaller screens */
+        height: auto; 
     }
 }
 
@@ -308,12 +308,12 @@ h2 {
 @media (max-width: 768px) {
     /* Adjust image items to 2 per row */
     .image-item {
-        width: 50%; /* Two images per row */
-        height: 250px; /* Adjust height for smaller screens */
+        width: 50%; 
+        height: 250px; 
     }
 
     .slider-control {
-        font-size: 1.5rem; /* Adjust slider controls for mobile */
+        font-size: 1.5rem; 
     }
 }
 
@@ -321,19 +321,19 @@ h2 {
 @media (max-width: 480px) {
     /* Adjust image items to 1 per row */
     .image-item {
-        width: 100%; /* One image per row */
-        height: 200px; /* Adjust height for small screens */
+        width: 100%; 
+        height: 200px; 
     }
 
     .slider-control {
-        font-size: 1.2rem; /* Adjust slider controls for smaller screens */
+        font-size: 1.2rem; 
     }
 }
 
 
 
 .our-services {
-    background-color: #f8f9fa; /* Gri deschis */
+    background-color: #C0C0C0; /* Gri deschis */
     padding: 50px 0;
 }
 
@@ -345,8 +345,8 @@ h2 {
 }
 
 .service-option:hover {
-    transform: scale(1.05); /* Mărește ușor pe hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adaugă umbră */
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 
@@ -412,3 +412,70 @@ h2 {
     font-size: 14px;
     opacity: 0.8;
 }
+
+
+.instagram-section {
+    background-color: #d3d3d3;
+    padding: 40px 0;
+    text-align: center;
+    ;
+    
+}
+
+.instagram-section h2 {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.instagram-slider {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide {
+    width: 300px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.swiper-slide img {
+    width: 100%; 
+    height: 350px; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+
+.btn-latest-drops {
+    background-color: #ffccd5;
+    color: #000; 
+    padding: 12px 30px;  
+    font-size: 1rem;  
+    font-weight: 500;  
+    text-transform: uppercase;  
+    border-radius: 5px;  
+    text-decoration: none;  
+    display: inline-block;  
+    transition: background-color 0.3s ease, transform 0.3s ease;  
+}
+
+.btn-latest-drops:hover {
+    background-color: #ff8c8c;  
+    transform: scale(1.05);  
+}
+
+
+
+
